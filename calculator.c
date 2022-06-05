@@ -33,4 +33,5 @@ int main(void)
     {
         printf("Product is %0.2f\n", (first_number * second_number));
     }
+    return (0);
 }
