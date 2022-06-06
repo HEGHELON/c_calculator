@@ -1,0 +1,10 @@
+#!/bin/bash
+alias cls=clear
+github()
+{
+    gcc -o $1 $2
+    git add .
+    git commit -m $3
+    git push
+};
+

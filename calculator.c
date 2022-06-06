@@ -8,29 +8,23 @@
  */
 int main(void)
 {
-    float first_number, second_number;
+    double first_number, second_number;
     char operator_symbol;
-    printf("Enter first number: ");
-    scanf("%f", &first_number);
-
-    printf("Enter operator: ");
-    scanf(" %c", &operator_symbol);
-
-    printf("Enter second number: ");
-    scanf("%f", &second_number);
+    
+    scanf("%lf %c %lf \n", &first_number,&operator_symbol,&second_number);
+    
+    /* printf("%lf %c %lf \n", first_number, operator_symbol, second_number);*/
 
     if (operator_symbol == '+')
-    {
-        printf("Sum is %0.2f\n", (first_number + second_number));
-    }
-
+      {
+	printf("Sum is:%g\n", (first_number+ second_number));
+      }
     if (operator_symbol == '-')
-    {
-        printf("Difference is %0.2f\n", (first_number - second_number));
-    }
-
+      {
+	printf("Difference is %g\n", (first_number - second_number));
+      }
     if (operator_symbol == '*')
-    {
-        printf("Product is %0.2f\n", (first_number * second_number));
-    }
+      {
+	printf("Product is %g\n", (first_number*second_number));
+      }
 }
