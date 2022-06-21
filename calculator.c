@@ -26,21 +26,21 @@ int main(void)
 
           
         if (operator_symbol == '+')
-            printf("%.2f\n", add(first_number));
+            printf("%.2f\n", add(&first_number));
         else if (operator_symbol == '-')
-            printf("%.2f\n", subtract(first_number));
+            printf("%.2f\n", subtract(&first_number));
         else if (operator_symbol == '*')
-            printf("%.2f\n", mult(first_number));
+            printf("%.2f\n", mult(&first_number));
         else if (operator_symbol == '^')
-            printf("%.2f\n", power(first_number));
+            printf("%.2f\n", power(&first_number));
         else if (operator_symbol == '%')
-            printf("%d\n", reminder(first_number));
+            printf("%d\n", reminder(&first_number));
         else if (operator_symbol == '/')
-            printf("%.2f\n", div(first_number));
+            printf("%.2f\n", div(&first_number));
         else if (operator_symbol == 'S')
-            printf("%.2f\n", square_single(first_number));
+            printf("%.2f\n", square_single(&first_number));
         else if (operator_symbol == 'R')
-            printf("%.2f\n", square_root(first_number));
+            printf("%.2f\n", square_root(&first_number));
         else
             printf("Enter a valid operator!\n");
 
